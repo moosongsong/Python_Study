@@ -1,0 +1,145 @@
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = 'hello'
+>>> b = "hello"
+>>> a
+'hello'
+>>> b
+'hello'
+>>> print(a, b)
+hello hello
+>>> c = 'name="Julie"'
+>>> print(c)
+name="Julie"
+>>> d = "name='Julie'"
+>>> print(d)
+name='Julie'
+>>> e = "I'm a girl"
+>>> print(e)
+I'm a girl
+>>> print('I
+      
+SyntaxError: EOL while scanning string literal
+>>> print('I\
+ am\
+ a\
+ girl')
+I am a girl
+>>> f = 'I\'m a girl'
+>>> print(f)
+I'm a girl
+>>> a = '''I
+love
+you'''
+>>> b = """I
+love
+you"""
+>>> print(a)
+I
+love
+you
+>>> print(b)
+I
+love
+you
+>>> c = 'I\nlove\nyou'
+>>> print(c)
+I
+love
+you
+>>> a
+'I\nlove\nyou'
+>>> b
+'I\nlove\nyou'
+>>> c
+'I\nlove\nyou'
+>>> 
+
+
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = (1,2,3)
+>>> type(a)
+<class 'tuple'>
+>>> b = [1,2,3]
+>>> type(b)
+<class 'list'>
+>>> c = {1,2,3}
+>>> type(c)
+<class 'set'>
+>>> d = {'apple' : '사과', 'peach' : '복숭아'}
+>>> type(d)
+<class 'dict'>
+>>> e = range(5)
+>>> type(e)
+<class 'range'>
+>>> a
+(1, 2, 3)
+>>> b
+[1, 2, 3]
+>>> c
+{1, 2, 3}
+>>> d
+{'apple': '사과', 'peach': '복숭아'}
+>>> e
+range(0, 5)
+>>> 
+
+
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> a = (1,2,3)
+>>> type(a)
+<class 'tuple'>
+>>> b = [1,2,3]
+>>> type(b)
+<class 'list'>
+>>> c = {1,2,3}
+>>> type(c)
+<class 'set'>
+>>> d = {'apple' : '사과', 'peach' : '복숭아'}
+>>> type(d)
+<class 'dict'>
+>>> e = range(5)
+>>> type(e)
+<class 'range'>
+>>> a
+(1, 2, 3)
+>>> b
+[1, 2, 3]
+>>> c
+{1, 2, 3}
+>>> d
+{'apple': '사과', 'peach': '복숭아'}
+>>> e
+range(0, 5)
+>>> 
+
+
+Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> #tuple, list, str, range : Sequence type Container
+>>> a = (1,2,3,4)
+>>> b = [10,20,30,40,50]
+>>> c = "abcde"
+>>> d = range(5, 10)
+>>> a[0]
+1
+>>> a[3]
+4
+>>> a[4]
+Traceback (most recent call last):
+  File "<pyshell#7>", line 1, in <module>
+    a[4]
+IndexError: tuple index out of range
+>>> b[-1]
+50
+>>> b[-3]
+30
+>>> c[2]
+'c'
+>>> d[-1]
+9
+>>> d[0]
+5
+>>> 
