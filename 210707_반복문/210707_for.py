@@ -47,4 +47,31 @@ def solve4():
     print(result)
 
 
-solve3()
+def solveRe():
+    num = int(input("정수 입력"))
+    count = 0
+    flag = True
+    first = 0
+    temp = num
+    while flag:
+        if count >= 100:
+            flag = False
+            break
+
+        square_sum = 0
+        for i in str(temp):
+            square_sum += int(i) * int(i)
+
+        if first == 0:
+            first = square_sum
+        elif first == square_sum:
+            break
+        temp = square_sum
+        count += 1
+    if not flag:
+        print("over 100s")
+    else:
+        print(count)
+
+
+solveRe()
