@@ -1,3 +1,8 @@
+import pdb
+
+pdb.set_trace()
+
+
 def solve1():
     num = input("정수를 입력하세요")
     for i in range(int(num)):
