@@ -14,7 +14,7 @@ def echo(anything):
     return anything + " " + anything
 
 
-def notThinking():
+def not_thinking():
     return None
 
 
@@ -22,7 +22,7 @@ print(do_nothing())
 print(make_a_sound())
 print(agree())
 print(echo("hello"))
-print(notThinking())
+print(not_thinking())
 
 
 #
@@ -62,3 +62,36 @@ def print_args(*args):
 print_args()
 
 print_args(3, 2, 1, "wait!", "uh…")
+
+
+def print_kwargs(**kwargs):
+    print('Keyword args:', kwargs)
+
+
+print_kwargs()
+
+print_kwargs(wine='merlot', entrée='mutton', dessert='macaroon')
+
+
+def print_data(data, *, start=0, end=100):
+    for value in (data[start:end]):
+        print(value)
+
+
+data = ['a', 'b', 'c', 'd', 'e', 'f']
+
+print_data(data)
+print("-------------")
+print_data(data, start=4)
+print("-------------")
+print_data(data, end=2)
+
+
+outside = ['one', 'fine', 'day']
+def mangle(arg):
+    arg[1] = 'terrible!'
+
+print(outside)
+
+mangle(outside)
+print(outside)
